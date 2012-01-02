@@ -16,14 +16,9 @@ coverage/*
 app/stylesheets/.sass-cache/*
 .sass-cache/*
 vendor/plugins/exception_notification/*
+*.swp
 
 # ignore sqlite 3 stuff for development
 *.sqlite3
 db/development.sqlite3
 
-# Jake's random files
-thoughtless.tmproj
-thoughtless_notes.txt
-Thoughtless Copy.txt
-cohort.rb
-usage.rb
