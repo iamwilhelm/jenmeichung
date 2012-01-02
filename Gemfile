@@ -1,11 +1,26 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.3'
-
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
+################# interface and template gems #####
+gem 'jquery-rails'
+
+gem 'haml'
+gem 'sass'
+
+################# database gems ###################
+# use the postgresql database
 gem 'pg'
+
+################# deployment gems #################
+
+# for deploying to heroku
+gem 'heroku'
+
+# use the thin webserver instead of default webrick
+gem 'thin'
 
 
 # Gems used only for assets and not required
@@ -16,13 +31,10 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
-
-# for deploying to heroku
-gem 'heroku'
-
-# use the thin webserver instead of default webrick
-gem 'thin'
+group :test do
+  # Pretty printed test output
+  gem 'turn', '0.8.2', :require => false
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -36,7 +48,4 @@ gem 'thin'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-group :test do
-  # Pretty printed test output
-  gem 'turn', '0.8.2', :require => false
-end
+
