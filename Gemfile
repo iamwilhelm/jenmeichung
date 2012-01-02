@@ -21,6 +21,9 @@ gem 'jquery-rails'
 # for deploying to heroku
 gem 'heroku'
 
+# use the thin webserver instead of default webrick
+gem 'thin'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
