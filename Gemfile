@@ -18,6 +18,9 @@ end
 
 gem 'jquery-rails'
 
+# for deploying to heroku
+gem 'heroku'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
