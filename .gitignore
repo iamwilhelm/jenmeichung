@@ -17,6 +17,7 @@ app/stylesheets/.sass-cache/*
 .sass-cache/*
 vendor/plugins/exception_notification/*
 *.swp
+.*.rb.swp
 
 # ignore sqlite 3 stuff for development
 *.sqlite3
