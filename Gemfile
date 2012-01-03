@@ -8,7 +8,9 @@ gem 'rails', '3.1.3'
 gem 'jquery-rails'
 
 gem 'haml'
-gem 'sass'
+
+# CSS template engine
+gem 'less'
 
 ################# database gems ###################
 # use the postgresql database
