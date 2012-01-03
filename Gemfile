@@ -7,7 +7,7 @@ gem 'rails', '3.1.3'
 ################# interface and template gems #####
 gem 'jquery-rails'
 
-gem 'haml'
+gem 'slim'
 
 # CSS template engine
 gem 'less'
