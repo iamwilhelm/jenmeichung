@@ -10,6 +10,19 @@ html
     = csrf_meta_tags
 
 body
-  .container
-    = yield
- 
+  .topbar
+    .fill
+      .container
+        ul.nav
+          li
+            a Home
+          li
+            a Gallery
+          li
+            a Contact
+
+    .container
+      = yield
+  
+    footer
+
