@@ -2,6 +2,8 @@ Jenmeichung::Application.routes.draw do
 
   root :to => "frontdoor#index" 
 
+  resource :gallery
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

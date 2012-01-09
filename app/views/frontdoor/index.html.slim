@@ -1,21 +1,44 @@
-.hero-unit style="height: 300px; background-image: url('#{image_path('bread_splash.jpg')}')"
+.hero-unit style="height: 288px; background-image: url('#{image_path('bread_splash.jpg')}')"
   .row
-    .span-two-third style="color: #efefef"
+    .span-two-third
       h1 style="color: #e0e0e0" Jen Mei Chung
-      p A painter
+      p style="color: #e0e0e0" 
+        | I paint food, people, and music
+      = link_to "See the Gallery", "#", :class => "btn large"
     .span-one-thirds
    
-.container
-  .row
-    .span-one-third
-      h2 Gallery
-      p
-        See the pictures
-    .span-one-third
-      h2 About
-      p
-        The process of painting
-    .span-one-third
-      h2 Thing
-      p
-        Other thing
+.row style="margin-bottom:30px"
+  .span4.offset1
+    h3 Art
+    p style="height: 144px"
+      = link_to "#", :style => "float: left; margin-right: 18px; margin-bottom: 18px" do
+        = image_tag("http://lorempixel.com/60/60/nature/2", :class => "thumbnail")
+      | I paint all sorts of different subjects. From food, to people, to music.
+      | Very interesting setups is what I tend to paint. I also like painting my 
+      | family, and photosgraphs that I see.
+    div
+      = link_to "See Art", gallery_path, :class => "btn primary"
+
+  .span4.offset1
+    h3 Life
+    p style="height: 144px"
+      | I paint all sorts of different subjects. From food, to people, to music.
+      | Very interesting setups is what I tend to paint. I also like painting my 
+      | family, and photosgraphs that I see.
+    div
+      = link_to "See Life", gallery_path, :class => "btn primary"
+
+  .span4.offset1
+    h3 Music
+    p style="height: 144px"
+      |When you want to keep in touch
+    div
+      = link_to "See Music", gallery_path, :class => "btn primary"
+
+.row
+  .span16
+    h2 Recent
+    ul.media-grid
+      - (1..15).each do |i|
+        li
+          a href="#"= image_tag("http://lorempixel.com/90/90/nature/#{i}")
